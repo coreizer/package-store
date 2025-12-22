@@ -22,14 +22,14 @@
 using System.Text.Json.Serialization;
 
 namespace PackageStore.Models {
-  public record PackageExport {
+  public record PackageExportModel {
     [JsonPropertyName("created_at")]
     public DateTimeOffset CreatedAt { get; }
 
     [JsonPropertyName("packages")]
-    public IList<Package> Packages { get; set; }
+    public IList<PackageModel> Packages { get; set; }
 
-    public PackageExport(IList<Package> packages) {
+    public PackageExportModel(IList<PackageModel> packages) {
       this.Packages = packages;
       this.CreatedAt = DateTimeOffset.Now;
     }

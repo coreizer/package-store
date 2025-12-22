@@ -58,7 +58,7 @@ namespace PackageStore {
 
       public DateTime StartTime { get; set; }
 
-      public Package Package { get; }
+      public PackageModel Package { get; }
 
       public TimeSpan ElapsedTime { get; set; } = TimeSpan.Zero;
 
@@ -111,7 +111,7 @@ namespace PackageStore {
         }
       }
 
-      public FileItem(Package package) {
+      public FileItem(PackageModel package) {
         this.Package = package;
         this.Tag = this;
         this.UseItemStyleForSubItems = false;
@@ -180,7 +180,7 @@ namespace PackageStore {
       }
     }
 
-    public void Add(Package package) {
+    public void Add(PackageModel package) {
       var filePath = Path.Combine(this.Settings.SaveFolderPath, package.Name);
       if (File.Exists(filePath)) {
         var result = TaskDialog.ShowDialog(this, new TaskDialogPage() {

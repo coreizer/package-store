@@ -23,7 +23,7 @@ using ByteSizeLib;
 using System.Text.Json.Serialization;
 
 namespace PackageStore.Models {
-  public record Package {
+  public record PackageModel {
     [JsonPropertyName("name")]
     public string Name { get; set; } = PackageStore.Environment.DefaultString;
 
@@ -53,7 +53,7 @@ namespace PackageStore.Models {
         if (propertyName == "SP_SYS") {
           return this.PS3SystemVer != PackageStore.Environment.DefaultString ? this.PS3SystemVer : this.PSPSystemVer;
         }
-        return typeof(Package).GetProperty(propertyName)?.GetValue(this)?.ToString(); // NOTE: Because is 'ByteSizeLib ' cannot be cast, use ToString()
+        return typeof(PackageModel).GetProperty(propertyName)?.GetValue(this)?.ToString(); // NOTE: Because is 'ByteSizeLib ' cannot be cast, use ToString()
       }
     }
   }
