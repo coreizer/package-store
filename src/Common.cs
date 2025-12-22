@@ -21,34 +21,35 @@
 
 using System.Runtime.Versioning;
 
-namespace PackageStore {
-  internal class Common {
-    [SupportedOSPlatform("windows6.1")]
-    public static string SelectDirectoryPath(bool isForce = false) {
-      if (!isForce && Directory.Exists(Properties.Settings.Default.SaveFolderPath))
-        return Properties.Settings.Default.SaveFolderPath;
+namespace PackageStore;
 
-      try {
-        using var FBD = new FolderBrowserDialog();
-        if (FBD.ShowDialog() != DialogResult.OK)
-          return null;
-        Properties.Settings.Default.SaveFolderPath = FBD.SelectedPath;
-      }
-      catch (Exception ex) {
-        TaskDialog.ShowDialog(new TaskDialogPage {
-          Icon = TaskDialogIcon.Error,
-          Text = ex.Message,
-          Caption = Environment.Name,
-          Heading = "Error",
-          Buttons = {
+[SupportedOSPlatform("windows")]
+internal class Common {
+  [SupportedOSPlatform("windows6.1")]
+  public static string SelectDirectoryPath(bool isForce = false) {
+    if (!isForce && Directory.Exists(Properties.Settings.Default.SaveFolderPath))
+      return Properties.Settings.Default.SaveFolderPath;
+
+    try {
+      using var FBD = new FolderBrowserDialog();
+      if (FBD.ShowDialog() != DialogResult.OK)
+        return null;
+      Properties.Settings.Default.SaveFolderPath = FBD.SelectedPath;
+    }
+    catch (Exception ex) {
+      TaskDialog.ShowDialog(new TaskDialogPage {
+        Icon = TaskDialogIcon.Error,
+        Text = ex.Message,
+        Caption = Environment.Name,
+        Heading = "Error",
+        Buttons = {
             TaskDialogButton.OK
             }
-        });
-      }
-      finally {
-        Properties.Settings.Default.Save();
-      }
-      return Properties.Settings.Default.SaveFolderPath;
+      });
     }
+    finally {
+      Properties.Settings.Default.Save();
+    }
+    return Properties.Settings.Default.SaveFolderPath;
   }
 }

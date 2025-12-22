@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
-    Microsoft ResX Schema 
+    Microsoft ResX Schema
 
     Version 2.0
 
@@ -48,7 +48,7 @@
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-    
+
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
@@ -118,14 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="SaveAsJsonStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+  <data name="ExportToJsonStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
   </data>
-  <data name="SaveAsJsonStripMenuItem.Text" xml:space="preserve">
-    <value>Json形式で保存</value>
+  <data name="ExportToJsonStripMenuItem.Text" xml:space="preserve">
+    <value>Json 出力</value>
   </data>
   <data name="SaveDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="SaveDirectoryToolStripMenuItem.Text" xml:space="preserve">
     <value>保存ディレクトリ</value>
@@ -135,6 +135,18 @@
   </data>
   <data name="FilesToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイル</value>
+  </data>
+  <data name="ResetSuggestionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 22</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 22</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 6</value>
+  </data>
+  <data name="githubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 22</value>
   </data>
   <data name="githubToolStripMenuItem.Text" xml:space="preserve">
     <value>GitHub</value>

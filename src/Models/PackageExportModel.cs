@@ -21,17 +21,17 @@
 
 using System.Text.Json.Serialization;
 
-namespace PackageStore.Models {
-  public record PackageExportModel {
-    [JsonPropertyName("created_at")]
-    public DateTimeOffset CreatedAt { get; }
+namespace PackageStore.Models;
 
-    [JsonPropertyName("packages")]
-    public IList<PackageModel> Packages { get; set; }
+public record PackageExportModel {
+  [JsonPropertyName("created_at")]
+  public DateTimeOffset CreatedAt { get; }
 
-    public PackageExportModel(IList<PackageModel> packages) {
-      this.Packages = packages;
-      this.CreatedAt = DateTimeOffset.Now;
-    }
+  [JsonPropertyName("packages")]
+  public IList<PackageModel> Packages { get; set; }
+
+  public PackageExportModel(IList<PackageModel> packages) {
+    this.Packages = packages;
+    this.CreatedAt = DateTimeOffset.Now;
   }
 }

@@ -19,16 +19,16 @@
 
 #endregion
 
-namespace PackageStore.Properties {
-  internal sealed partial class Settings {
+namespace PackageStore.Properties;
 
-    public Settings() {
-    }
+internal sealed partial class Settings {
 
-    private void SettingChangingEventHandler(object sender, System.Configuration.SettingChangingEventArgs e) {
-    }
+  public Settings() {
+  }
 
-    private void SettingsSavingEventHandler(object sender, System.ComponentModel.CancelEventArgs e) {
-    }
+  private void SettingChangingEventHandler(object sender, System.Configuration.SettingChangingEventArgs e) {
+  }
+
+  private void SettingsSavingEventHandler(object sender, System.ComponentModel.CancelEventArgs e) {
   }
 }

@@ -21,22 +21,22 @@
 
 using System.Net.NetworkInformation;
 
-namespace PackageStore {
-  internal static class Program {
-    /// <summary>
-    /// アプリケーションのメイン エントリ ポイントです。
-    /// </summary>
-    [STAThread]
-    private static void Main() {
-      Application.EnableVisualStyles();
-      Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+namespace PackageStore;
 
-      // ネットワークが利用可能どうかを確認します。
-      if (!NetworkInterface.GetIsNetworkAvailable()) {
-        throw new NetworkInformationException();
-      }
+internal static class Program {
+  /// <summary>
+  /// アプリケーションのメイン エントリ ポイントです。
+  /// </summary>
+  [STAThread]
+  private static void Main() {
+    Application.EnableVisualStyles();
+    Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
 
-      Application.Run(new frmMain());
+    // ネットワークが利用可能どうかを確認します。
+    if (!NetworkInterface.GetIsNetworkAvailable()) {
+      throw new NetworkInformationException();
     }
+
+    Application.Run(new frmMain());
   }
 }

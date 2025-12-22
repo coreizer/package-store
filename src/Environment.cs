@@ -19,9 +19,12 @@
 
 #endregion
 
-namespace PackageStore {
-  public static class Environment {
-    public const string DefaultString = "Unknown";
-    public const string Name = "Package Store";
-  }
+using System.Runtime.Versioning;
+
+namespace PackageStore;
+
+[SupportedOSPlatform("windows")]
+public static class Environment {
+  public const string DefaultString = "Unknown";
+  public const string Name = "Package Store";
 }

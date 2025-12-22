@@ -1,7 +1,7 @@
 ﻿#region License Information (GPL v3)
 
 /**
- * Copyright (C) 2017-2023 coreizer
+ * Copyright (C) 2017-2026 coreizer
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,11 +19,14 @@
 
 #endregion
 
-namespace PackageStore {
-  public partial class frmAbout : Form {
-    public frmAbout() {
-      this.InitializeComponent();
-      this.labelVersion.Text = $"Version: {Application.ProductVersion}";
-    }
+using System.Runtime.Versioning;
+
+namespace PackageStore;
+
+[SupportedOSPlatform("windows")]
+public partial class frmAbout : Form {
+  public frmAbout() {
+    this.InitializeComponent();
+    this.labelVersion.Text = $"Version: {Application.ProductVersion}";
   }
 }
