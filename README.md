@@ -21,7 +21,7 @@
   <ol>
     <li><a href="#👀-featured">Featured</a></li>
     <li><a href="#🖼️-screenshot">Screenshot</a></li>
-    <li><a href="#🙏-additional-resources-and-thanks">Additional resources and thanks</a></li>
+    <li><a href="#🙏-acknowledgements">Acknowledgements</a></li>
     <li><a href="#👷-author">Author</a></li>
     <li><a href="#🌏-stay-in-touch">Stay In Touch</a></li>
     <li><a href="#⚖️-license">License</a></li>
@@ -40,7 +40,7 @@
 
 ![ScreenShot](docs/PackageStore.png)
 
-## 🙏 Additional resources and thanks
+## 🙏 Acknowledgements
 
 - [PS3 Developer Wiki - Environments](https://www.psdevwiki.com/ps3/Environments)
 - [ByteSize - Utility](https://github.com/omar/ByteSize)
