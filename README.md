@@ -28,8 +28,9 @@
   </ol>
 </details>
 
-## 👀 Featured
+---
 
+## 👀 Featured
 - Package Search
 - Simple Download Manger
 - Search history
@@ -37,11 +38,9 @@
 - Multilingual: English, Japanese (Form only)
 
 ## 🖼️ Screenshot
-
 ![ScreenShot](docs/PackageStore.png)
 
 ## 🙏 Acknowledgements
-
 - [PS3 Developer Wiki - Environments](https://www.psdevwiki.com/ps3/Environments)
 - [ByteSize - Utility](https://github.com/omar/ByteSize)
 - [redump.org](http://redump.org/)
@@ -50,16 +49,16 @@
 - [Fody](https://github.com/Fody/Fody)
 
 ## 🌏 Stay In Touch
-
 - [Website (coreizer.dev)](https://www.coreizer.dev)
 - [X](https://www.x.com/coreizer)
 
 ## 👷 Author
-
 - coreizer
 
 ## ⚖️ License
 
 This project is licensed under [GPL v3.0](https://opensource.org/license/lgpl-3-0/). See [License File](LICENSE) for details.
+
+---
 
 ![Alt](https://repobeats.axiom.co/api/embed/3eadd5b0eea3c6a47e03fbb06a56254be3a009d1.svg "Repobeats analytics image")
