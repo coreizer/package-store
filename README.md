@@ -7,7 +7,7 @@
 
   <h3 align="center">PackageStore</h3>
 
-  <p>PS Store(CD only) package search tools</p>
+  <p>PS Store (CD-only) package search tool</p>
 
   <p align="center">
     <a href="https://github.com/coreizer/PackageStore/issues">Report Bug</a>
@@ -32,10 +32,10 @@
 
 ## 👀 Featured
 - Package Search
-- Simple Download Manger
+- Simple Download Manager
 - Search history
-- Compensation of package Id using redump's database
-- Multilingual: English, Japanese (Form only)
+- Package ID completion using the Redump database
+- Multilingual support: English, Japanese (form only)
 
 ## 🖼️ Screenshot
 ![ScreenShot](docs/PackageStore.png)
